@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h1>Tree Visualizer</h1>
+    <div>
+        <label for="array-input">Array:</label>
+        <input type="text" id="array-input" placeholder="Enter numbers separated by commas">
+    </div>
+    <div id="options">
+        <button onclick="TreeAndArray()">Binary Tree Visualization</button>
+        <button onclick="maxHeap()">Max-Heap Visualization</button>
+        <button onclick="minHeap()">Min-Heap Visualization</button>
+        <button onclick="createBinarySearchTree()">Binary Search Tree</button>
+    </div>
+    <h2 id="visual-title"></h2>
+    <p id="instructions"></p>
+    <div id="binary-tree"></div>
+    <div id="array-visual"></div>
+    <script src="nodes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
